@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>News App Demo</title>
+    <title>News</title>
     <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
@@ -39,7 +39,7 @@
               <p class="description">{{ .Description }}</p>
               <div class="metadata">
                 <p class="source">{{ .Source.Name }}</p>
-                <time class="published-date">{{ .PublishedAt }}</time>
+                <time class="published-date">{{ .FormatPublishedDate }}</time>
               </div>
             </div>
             <img class="article-image" src="{{ .URLToImage }}" />
