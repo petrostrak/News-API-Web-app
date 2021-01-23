@@ -41,6 +41,7 @@ func (c *Client) FetchEverything(query, page string) (*Results, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	defer resp.Body.Close()
 
 	body, err := ioutil.ReadAll(resp.Body)
@@ -61,9 +62,5 @@ func NewClient(httpClient *http.Client, key string, pageSize int) *Client {
 		pageSize = 100
 	}
 
-	return &Client{
-		httpClient,
-		key,
-		pageSize,
-	}
+	return &Client{httpClient, key, pageSize}
 }
