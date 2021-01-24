@@ -6,7 +6,7 @@ query through the News API, and presents the results on the page.
 Here's what the [completed application](https://petrostrak-news.herokuapp.com/)
 looks like:
 
-![demo](https://ibb.co/nsFTkRd)
+![demo](https://i.ibb.co/bgkxd7w/newsapp.png)
 
 ## Prerequisites
 
