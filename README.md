@@ -1,4 +1,4 @@
-# News Demo starter files
+# News API web application
 
 It’s a simple app that fetches news articles matching a particular search 
 query through the News API, and presents the results on the page.
